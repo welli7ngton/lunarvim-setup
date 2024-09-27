@@ -8,6 +8,10 @@ require("welli7ngton.dashboard")   -- Configuração de dashboard e banners
 require("welli7ngton.which-key")
 require("welli7ngton.keymaps")
 
+
+-- robotframework lsp configs
+require("welli7ngton.robotframework-lsp")
+
 -- Configurações gerais do LunarVim
 lvim.log.level = "warn"
 vim.opt.timeoutlen = 500
