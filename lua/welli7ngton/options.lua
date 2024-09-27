@@ -1,5 +1,5 @@
 if vim.g.neovide then
-  vim.opt.guifont = "MonoLisa:h24"
+  vim.opt.guifont = "FiraCode Nerd Font:h24"
 
   vim.g.neovide_transparency = 1
   vim.g.transparency = 0.8
