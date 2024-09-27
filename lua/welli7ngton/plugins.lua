@@ -11,14 +11,14 @@ lvim.plugins = {
       })
     end,
   },
-  -- { 'wakatime/vim-wakatime',             lazy = false },
-  { 'jose-elias-alvarez/typescript.nvim' },
+  { "jose-elias-alvarez/typescript.nvim" },
+  { 'wakatime/vim-wakatime',             lazy = false },
   { 'mg979/vim-visual-multi' },
   { "Mofiqul/dracula.nvim" },
   { 'editorconfig/editorconfig-vim' },
   { 'lunarvim/lunar.nvim' },
   { "morhetz/gruvbox" },
-  { 'jparise/vim-graphql' },
+
   { 'f-person/git-blame.nvim' },
   {
     "brenoprata10/nvim-highlight-colors",

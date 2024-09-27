@@ -2,34 +2,42 @@ local kind = require('welli7ngton.kind')
 
 lvim.leader = "space"
 
-lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
-lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
-lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
+-- salva o arquivo ctrl-s
+lvim.keys.normal_mode["<c-s>"] = ":w<cr>"
 
-lvim.keys.normal_mode["<S-x>"] = ":BufferKill<CR>"
-lvim.keys.normal_mode["<C-d>"] = "<C-d>zz"
-lvim.keys.normal_mode["<C-u>"] = "<C-u>zz"
-lvim.keys.normal_mode["<C-a>"] = "ggVG"
+-- alterna entre buffers
+lvim.keys.normal_mode["<s-l>"] = ":BufferLineCycleNext<cr>"
+lvim.keys.normal_mode["<s-h>"] = ":BufferLineCyclePrev<cr>"
+
+-- fecha o buffer atual
+lvim.keys.normal_mode["<s-x>"] = ":BufferKill<cr>"
+lvim.keys.normal_mode["<c-d>"] = "<c-d>zz"
+lvim.keys.normal_mode["<c-u>"] = "<c-u>zz"
+
+-- seleciona o arquivo todo ctrl-a
+lvim.keys.normal_mode["<c-a>"] = "ggVG"
 vim.opt.relativenumber = true
 
-vim.keymap.set('n', 'gn', ":tabe %<CR>")
+vim.keymap.set('n', 'gn', ":tabe %<cr>")
+
 lvim.lsp.buffer_mappings.normal_mode["gr"] = {
-  ":lua require'telescope.builtin'.lsp_references()<cr>",
-  kind.cmp_kind.Reference .. " Find references"
+  ":lua require'telescope.builtin'.lsp_References()<cr>",
+  kind.cmp_kind.Reference .. " find references"
 }
 
+-- Go to definition
 lvim.lsp.buffer_mappings.normal_mode["gd"] = {
   ":lua vim.lsp.buf.definition()<cr>",
-  -- ":lua require'telescope.builtin'.lsp_definitions()<cr>",
-  kind.cmp_kind.Reference .. " Definitions"
-}
-lvim.keys.normal_mode["<C-b>"] = ":TmuxNavigateLeft<CR>"
-lvim.lsp.buffer_mappings.normal_mode["gD"] = {
-  ":lua vim.lsp.buf.type_definition()<cr>",
-  kind.cmp_kind.Reference .. " Type Definition"
+  kind.cmp_kind.Reference .. " definitions"
 }
 
+lvim.keys.normal_mode["<c-b>"] = ":TmuxNavigateLeft<cr>"
+
+-- Go to File
 lvim.lsp.buffer_mappings.normal_mode["gf"] = {
   ":Telescope frecency<cr>",
-  kind.cmp_kind.Reference .. " Telescope Frecency"
+  kind.cmp_kind.Reference .. " telescope frecency"
 }
+
+-- Shift-f para buscar palavras globalmente
+vim.api.nvim_set_keymap('n', '<S-f>', ':Telescope live_grep<CR>', { noremap = true, silent = true })
