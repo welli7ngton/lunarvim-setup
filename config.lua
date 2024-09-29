@@ -16,3 +16,9 @@ require("welli7ngton.robotframework-lsp")
 lvim.log.level = "warn"
 vim.opt.timeoutlen = 500
 lvim.format_on_save = true
+lvim.transparent_window = true
+
+-- C/C++ setup
+lvim.lsp.installer.setup.automatic_installation = true
+
+lvim.lsp.installer.setup.ensure_installed = { "clangd" }
