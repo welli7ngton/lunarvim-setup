@@ -54,5 +54,3 @@ Ensure that you have the following dependencies installed:
 
 - LunarVim: Install from the official [LunarVim](https://www.lunarvim.org/docs/installation) site.
 - Neovim v0.9.0+ : LunarVim requires [Neovim](https://github.com/neovim/neovim/releases/tag/v0.10.1) version 0.9.0+ or higher.
-
-This template should give you a solid starting point for your GitHub repository. Let me know if you'd like any other details included!
