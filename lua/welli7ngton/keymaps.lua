@@ -41,3 +41,7 @@ lvim.lsp.buffer_mappings.normal_mode["gf"] = {
 
 -- Shift-f para buscar palavras globalmente
 vim.api.nvim_set_keymap('n', '<S-f>', ':Telescope live_grep<CR>', { noremap = true, silent = true })
+
+-- Mapeamento para <leader>tt abrir o terminal usando ToggleTerm
+lvim.keys.normal_mode["<leader>tt"] = "<cmd>ToggleTerm<CR>"
+lvim.keys.term_mode["<leader>tt"] = "<cmd>ToggleTerm<CR>"
