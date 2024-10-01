@@ -2,8 +2,7 @@ local kind = require('welli7ngton.kind')
 
 lvim.leader = "space"
 
--- salva o arquivo ctrl-s
-lvim.keys.normal_mode["<c-s>"] = ":w<cr>"
+vim.opt.relativenumber = true
 
 -- alterna entre buffers
 lvim.keys.normal_mode["<s-l>"] = ":BufferLineCycleNext<cr>"
@@ -11,12 +10,13 @@ lvim.keys.normal_mode["<s-h>"] = ":BufferLineCyclePrev<cr>"
 
 -- fecha o buffer atual
 lvim.keys.normal_mode["<s-x>"] = ":BufferKill<cr>"
+
+-- centraliza o cursor subindo/descendo o arquivo
 lvim.keys.normal_mode["<c-d>"] = "<c-d>zz"
 lvim.keys.normal_mode["<c-u>"] = "<c-u>zz"
 
 -- seleciona o arquivo todo ctrl-a
 lvim.keys.normal_mode["<c-a>"] = "ggVG"
-vim.opt.relativenumber = true
 
 vim.keymap.set('n', 'gn', ":tabe %<cr>")
 

@@ -12,6 +12,9 @@ end
 lvim.log.level = "warn"
 lvim.format_on_save = true
 
+-- 'mescla' os clipboards
+vim.opt.clipboard = "unnamedplus"
+
 lvim.builtin.treesitter.ensure_installed = {
   "bash",
   "c",
