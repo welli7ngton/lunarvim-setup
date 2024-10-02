@@ -55,3 +55,14 @@ lvim.keys.normal_mode["<leader>Y"] = '"+Y'
 
 -- Remap do modo visual para colar sem sobrescrever o registro de cópia
 lvim.keys.visual_mode["<leader>p"] = [["_dP]]
+
+-- Centralizar a tela ao usar 'n' para a próxima ocorrência de busca
+lvim.keys.normal_mode["n"] = "nzzzv"
+-- Centralizar a tela ao usar 'N' para a ocorrência anterior de busca
+lvim.keys.normal_mode["N"] = "Nzzzv"
+
+-- Substituição da palavra sob o cursor globalmente no arquivo com Ctrl+s
+lvim.keys.normal_mode["<C-s>"] = [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]]
+
+-- Tornar o arquivo executável com Ctrl+x
+lvim.keys.normal_mode["<C-x>"] = "<cmd>!chmod +x %<CR>"
