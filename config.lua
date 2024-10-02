@@ -22,3 +22,6 @@ lvim.transparent_window = true
 lvim.lsp.installer.setup.automatic_installation = true
 
 lvim.lsp.installer.setup.ensure_installed = { "clangd" }
+
+-- load snippets from path/of/your/nvim/config/my-cool-snippets
+require("luasnip.loaders.from_vscode").lazy_load({ paths = { "~/.config/lvim/lua/welli7ngton/snippets.lua" } })
