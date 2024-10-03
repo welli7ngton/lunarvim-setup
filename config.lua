@@ -7,8 +7,8 @@ require("welli7ngton.filetype")    -- Configurações de tipos de arquivos
 require("welli7ngton.dashboard")   -- Configuração de dashboard e banners
 require("welli7ngton.which-key")
 require("welli7ngton.keymaps")
-
-
+require("welli7ngton.general_lsp")
+require("welli7ngton.java-lsp")
 -- robotframework lsp configs
 require("welli7ngton.robotframework-lsp")
 
@@ -23,5 +23,5 @@ lvim.lsp.installer.setup.automatic_installation = true
 
 lvim.lsp.installer.setup.ensure_installed = { "clangd" }
 
--- load snippets from path/of/your/nvim/config/my-cool-snippets
-require("luasnip.loaders.from_vscode").lazy_load({ paths = { "~/.config/lvim/lua/welli7ngton/snippets.lua" } })
+-- Carregar snippets personalizados
+require("luasnip.loaders.from_lua").load({ paths = "~/.config/lvim/lua/welli7ngton/snippets" })

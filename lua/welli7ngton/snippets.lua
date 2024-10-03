@@ -26,6 +26,7 @@ return {
   s("_main", {
     t({ "if __name__ == '__main__':", "" }),
     t({ "\t", "" }),
+    i({ "\nprint('deu certo papai')", "" }),
     i({ "\tpass", "" }),
     t({ "\n", "" }),
   })

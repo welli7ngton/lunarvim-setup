@@ -15,11 +15,12 @@ local themes = {
   sonokai = "sonokai",
   edge = "edge",
   ayu = "ayu",
-  dracula = "dracula"
+  dracula = "dracula",
+  synthwave = "synthwave84"
 }
 
 lvim.transparent_window = true
-lvim.colorscheme = themes.lunar
+lvim.colorscheme = themes.synthwave
 
 local extra_opts = {
   sonokai = {
@@ -66,3 +67,16 @@ end
 if lvim.colorscheme == themes.ayu then
   vim.g.ayucolor = extra_opts.ayu.styles.mirage
 end
+
+require 'synthwave84'.setup({
+  glow = {
+    error_msg = true,
+    type2 = true,
+    func = true,
+    keyword = true,
+    operator = false,
+    buffer_current_target = true,
+    buffer_visible_target = true,
+    buffer_inactive_target = true,
+  }
+})

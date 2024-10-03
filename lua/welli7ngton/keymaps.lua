@@ -66,3 +66,8 @@ lvim.keys.normal_mode["<C-s>"] = [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 -- Tornar o arquivo executável com Ctrl+x
 lvim.keys.normal_mode["<C-x>"] = "<cmd>!chmod +x %<CR>"
+
+-- Expandir ou pular para o próximo item do snippet
+vim.api.nvim_set_keymap("i", "<C-.>", "<cmd>lua require'luasnip'.expand_or_jump()<CR>", { noremap = true, silent = true })
+-- Pular para o item anterior do snippet
+vim.api.nvim_set_keymap("i", "<C-,>", "<cmd>lua require'luasnip'.jump(-1)<CR>", { noremap = true, silent = true })

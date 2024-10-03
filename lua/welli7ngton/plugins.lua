@@ -6,6 +6,8 @@ lvim.plugins = {
     -- install jsregexp (optional!).
     build = "make install_jsregexp"
   },
+  { "NLKNguyen/papercolor-theme" }, -- sunset theme
+  { "lunarvim/synthwave84.nvim" },  --sunset theme
   {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",

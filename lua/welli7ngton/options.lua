@@ -15,6 +15,12 @@ lvim.format_on_save = true
 
 vim.opt.clipboard = "unnamedplus"
 
+vim.filetype.add({
+  extension = {
+    robot = "robot",
+  },
+})
+
 lvim.builtin.treesitter.ensure_installed = {
   "bash",
   "c",
