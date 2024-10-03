@@ -16,11 +16,12 @@ local themes = {
   edge = "edge",
   ayu = "ayu",
   dracula = "dracula",
+  dracula_soft = "dracula-soft",
   synthwave = "synthwave84"
 }
 
 lvim.transparent_window = true
-lvim.colorscheme = themes.synthwave
+lvim.colorscheme = themes.horizon
 
 local extra_opts = {
   sonokai = {
