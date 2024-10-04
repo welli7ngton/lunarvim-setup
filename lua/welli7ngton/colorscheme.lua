@@ -21,7 +21,7 @@ local themes = {
 }
 
 lvim.transparent_window = true
-lvim.colorscheme = themes.horizon
+lvim.colorscheme = themes.synthwave
 
 local extra_opts = {
   sonokai = {

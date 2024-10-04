@@ -9,6 +9,3 @@ lspconfig.tsserver.setup {}
 
 -- Exemplo para HTML
 lspconfig.html.setup {}
-
--- Mais LSPs podem ser adicionados conforme necessário
-lspconfig.java.setup {}
