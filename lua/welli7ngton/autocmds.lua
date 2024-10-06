@@ -5,8 +5,3 @@ vim.api.nvim_create_autocmd("FileType", {
     require("nvim-treesitter.highlight").attach(0, "bash")
   end,
 })
-
-vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = { ".config/lvim/config.lua" },
-  command = "PackerCompile",
-})

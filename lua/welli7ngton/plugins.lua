@@ -4,7 +4,8 @@ lvim.plugins = {
     -- follow latest release.
     version = "v2.3.0", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
     -- install jsregexp (optional!).
-    build = "make install_jsregexp"
+    build = "make install_jsregexp",
+    dependencies = { "rafamadriz/friendly-snippets" },
   },
   { "NLKNguyen/papercolor-theme" }, -- sunset theme
   { "LunarVim/synthwave84.nvim" },  --sunset theme
