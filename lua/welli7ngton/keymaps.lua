@@ -71,3 +71,9 @@ lvim.keys.normal_mode["<C-x>"] = "<cmd>!chmod +x %<CR>"
 vim.api.nvim_set_keymap("i", "<C-.>", "<cmd>lua require'luasnip'.expand_or_jump()<CR>", { noremap = true, silent = true })
 -- Pular para o item anterior do snippet
 vim.api.nvim_set_keymap("i", "<C-,>", "<cmd>lua require'luasnip'.jump(-1)<CR>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<leader>rn", ":IncRename")
+-- Cria um keymap para renomear a palavra sob o cursor usando o IncRename
+-- vim.keymap.set("n", "<leader>rn", function()
+-- rnnbnnnn:IncRename " .. vim.fn.expand("<cword>")
+-- end, { expr = true, noremap = true, silent = true })

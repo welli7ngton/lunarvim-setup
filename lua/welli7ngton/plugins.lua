@@ -7,6 +7,19 @@ lvim.plugins = {
     build = "make install_jsregexp",
     dependencies = { "rafamadriz/friendly-snippets" },
   },
+  {
+    'camspiers/lens.vim',
+  },
+  { 'camspiers/animate.vim' },
+  {
+    "smjonas/inc-rename.nvim",
+    config = function()
+      require("inc_rename").setup()
+    end,
+  },
+  {
+    "akinsho/bufferline.nvim",      -- bufferline parecida com vscode
+  },
   { "NLKNguyen/papercolor-theme" }, -- sunset theme
   { "LunarVim/synthwave84.nvim" },  --sunset theme
   {
@@ -20,14 +33,14 @@ lvim.plugins = {
         },
       })
     end,
-    {
-      "iamcco/markdown-preview.nvim",
-      build = "cd app && npm install",
-      ft = "markdown",
-      config = function()
-        vim.g.mkdp_auto_start = 1
-      end,
-    },
+  },
+  {
+    "iamcco/markdown-preview.nvim",
+    build = "cd app && npm install",
+    ft = "markdown",
+    config = function()
+      vim.g.mkdp_auto_start = 1
+    end,
   },
   { "jose-elias-alvarez/typescript.nvim" },
   { 'wakatime/vim-wakatime',             lazy = false },
