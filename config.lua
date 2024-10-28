@@ -11,7 +11,7 @@ require("welli7ngton.general_lsp")
 require("welli7ngton.java-lsp")
 -- robotframework lsp configs
 require("welli7ngton.robotframework-lsp")
-
+require("welli7ngton.statusline")
 -- Configurações gerais do LunarVim
 lvim.log.level = "warn"
 vim.opt.timeoutlen = 500
@@ -23,5 +23,10 @@ lvim.lsp.installer.setup.automatic_installation = true
 
 lvim.lsp.installer.setup.ensure_installed = { "clangd" }
 
+-- Coloca o explorador de arquivos do lado direito
+lvim.builtin.nvimtree.setup.view.side = "right"
+
+-- Adiciona uma linha na coluna 80 do editor
+vim.opt.colorcolumn = "80"
 -- Carregar snippets personalizados
 require("luasnip.loaders.from_lua").load({ paths = "~/.config/lvim/lua/welli7ngton/snippets" })
