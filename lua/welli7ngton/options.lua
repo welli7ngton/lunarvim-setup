@@ -1,5 +1,5 @@
 if vim.g.neovide then
-  vim.opt.guifont = "meslolgs nerd font mono bold italic:h24"
+  vim.opt.guifont = "MesloLGM Nerd Font Mono:h24"
 
   vim.g.neovide_transparency = 1
   vim.g.transparency = 0.8
