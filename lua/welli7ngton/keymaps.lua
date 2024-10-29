@@ -71,3 +71,19 @@ lvim.keys.normal_mode["<C-x>"] = "<cmd>!chmod +x %<CR>"
 vim.api.nvim_set_keymap("i", "<C-.>", "<cmd>lua require'luasnip'.expand_or_jump()<CR>", { noremap = true, silent = true })
 -- Pular para o item anterior do snippet
 vim.api.nvim_set_keymap("i", "<C-,>", "<cmd>lua require'luasnip'.jump(-1)<CR>", { noremap = true, silent = true })
+
+-- Função para inserir texto no início da linha selecionada
+function InsertAtLineStart()
+  vim.cmd(":'<,'>norm I" .. vim.fn.input('Texto a adicionar no início: ') .. ' ')
+end
+
+-- Função para inserir texto no fim da linha selecionada
+function InsertAtLineEnd()
+  vim.cmd(":'<,'>norm A" .. vim.fn.input('Texto a adicionar no fim: '))
+end
+
+-- Mapeamento para selecionar visualmente e adicionar texto no início da linha
+lvim.keys.visual_mode["<F2>"] = ":<C-U>lua InsertAtLineStart()<CR>"
+
+-- Mapeamento para selecionar visualmente e adicionar texto no fim da linha
+lvim.keys.visual_mode["<F3>"] = ":<C-U>lua InsertAtLineEnd()<CR>"
