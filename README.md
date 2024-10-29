@@ -7,6 +7,7 @@ This setup includes several customized settings, plugins, keymaps, and options t
 
 ## Configs structure
 `/lua/welli7ngton`
+
 ├── autcmds.lua                # Custom auto commands
 
 ├── banners.lua                # Banner settings for the dashboard
