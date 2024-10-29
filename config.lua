@@ -25,6 +25,3 @@ lvim.lsp.installer.setup.ensure_installed = { "clangd" }
 
 -- Coloca o explorador de arquivos do lado direito
 lvim.builtin.nvimtree.setup.view.side = "right"
-
--- Carregar snippets personalizados
-require("luasnip.loaders.from_lua").load({ paths = "~/.config/lvim/lua/welli7ngton/snippets" })
