@@ -37,6 +37,8 @@ lvim.builtin.treesitter.ensure_installed = {
 }
 
 lvim.builtin.terminal.active = true
+lvim.builtin.terminal.direction = "horizontal" -- VsCode Like
+-- lvim.builtin.terminal.direction = "float"  -- To a floating terminal
 
 lvim.builtin.nvimtree.setup.view.side = "right"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
