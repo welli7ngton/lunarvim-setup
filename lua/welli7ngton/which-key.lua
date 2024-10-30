@@ -2,8 +2,6 @@ local kind = require('welli7ngton.kind')
 
 local wk = lvim.builtin.which_key
 
-wk.mappings["a"] = { ":Alpha<cr>", kind.icons.screen .. " Dashboard" }
-
 wk.mappings["S"] = {
   name = " persistence.nvim",
   s = { "<cmd>lua require('persistence').load()<cr>", kind.icons.clock .. " Reload last session for dir" },
