@@ -85,16 +85,15 @@ local buttons = {
   type = "group",
   val = {
     button("a", " " .. kind.nvim_tree_icons.symlink .. " New File", ":ene <BAR> startinsert <CR>"),
-    button("s", " " .. kind.icons.magic .. "Restore", ":lua require('persistence').load()<cr>"),
     button(
-      "d",
+      "s",
       " " .. kind.icons.git .. " LazyGit",
       ":lua require('lvim.core.terminal')._exec_toggle({cmd = 'lazygit', count = 1, direction = 'float'})<CR>"
     ),
+    button("d", " " .. kind.icons.docs .. " Recents", ":Telescope oldfiles<CR>"),
     button("f", " " .. kind.cmp_kind.Folder .. "Find Files", ":Telescope find_files<CR>"),
-    button("q", " " .. kind.icons.docs .. " Recents", ":Telescope oldfiles<CR>"),
-    button("w", " " .. kind.icons.settings .. "Configs", ":e ~/.config/lvim/config.lua<CR>"),
-    button("e", " " .. "✖" .. " Exit", ":q<CR>"),
+    button("q", " " .. kind.icons.settings .. "Configs", ":e ~/.config/lvim/config.lua<CR>"),
+    button("w", " " .. "✖" .. " Exit", ":q<CR>"),
   }
 }
 
