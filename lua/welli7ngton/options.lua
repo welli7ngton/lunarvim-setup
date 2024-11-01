@@ -36,9 +36,13 @@ lvim.builtin.treesitter.ensure_installed = {
   "yaml",
 }
 
+local TERM_DIRECTION = "horizontal"              -- Use 'float' for a floating term or 'horizontal' for VsCode Like
 lvim.builtin.terminal.active = true
-lvim.builtin.terminal.direction = "horizontal" -- VsCode Like
--- lvim.builtin.terminal.direction = "float"  -- To a floating terminal
+lvim.builtin.terminal.direction = TERM_DIRECTION --
+
+if TERM_DIRECTION == "horizontal" then
+  lvim.builtin.terminal.size = 13
+end
 
 lvim.builtin.nvimtree.setup.view.side = "right"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
