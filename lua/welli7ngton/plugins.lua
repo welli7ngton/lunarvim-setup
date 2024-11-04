@@ -1,5 +1,11 @@
 lvim.plugins = {
   {
+    'welli7ngton/lvim-pomodorow',
+    config = function()
+      require('pomodorow').setup(30, 5)
+    end
+  },
+  {
     "lukas-reineke/virt-column.nvim",
     opts = {
       char = { "┆" },
