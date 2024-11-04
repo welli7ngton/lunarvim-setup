@@ -61,7 +61,7 @@ local function button(sc, txt, keybind)
     text = txt,
     shortcut = sc,
     cursor = 5,
-    width = 20,
+    width = 25,
     align_shortcut = "right",
     hl_shortcut = "Number",
     hl = "Function",
@@ -93,7 +93,9 @@ local buttons = {
     button("d", " " .. kind.icons.docs .. " Recents", ":Telescope oldfiles<CR>"),
     button("f", " " .. kind.cmp_kind.Folder .. "Find Files", ":Telescope find_files<CR>"),
     button("q", " " .. kind.icons.settings .. "Configs", ":e ~/.config/lvim/config.lua<CR>"),
-    button("w", " " .. "✖" .. " Exit", ":q<CR>"),
+    button("w", " " .. kind.cmp_kind.Color .. "Colorscheme Config",
+      ":e ~/.config/lvim/lua/welli7ngton/colorscheme.lua<CR>"),
+    button("e", " " .. "✖" .. " Exit", ":q<CR>"),
   }
 }
 
