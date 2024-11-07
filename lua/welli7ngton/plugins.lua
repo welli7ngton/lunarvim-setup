@@ -1,5 +1,11 @@
 lvim.plugins = {
   {
+    'welli7ngton/code7runner',
+    config = function()
+      require('code7runner')
+    end
+  },
+  {
     'welli7ngton/lvim-pomodorow',
     config = function()
       require('pomodorow').setup(30, 5)

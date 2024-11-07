@@ -87,3 +87,7 @@ lvim.keys.visual_mode["<F2>"] = ":<C-U>lua InsertAtLineStart()<CR>"
 
 -- Mapeamento para selecionar visualmente e adicionar texto no fim da linha
 lvim.keys.visual_mode["<F3>"] = ":<C-U>lua InsertAtLineEnd()<CR>"
+
+-- Code7Runner keymoap
+lvim.keys.normal_mode["<F5>"] = ":Code7Run<CR>"
+lvim.keys.insert_mode["<F5>"] = ":Code7Run<CR>"
