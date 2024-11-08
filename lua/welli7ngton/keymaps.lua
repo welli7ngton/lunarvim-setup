@@ -45,8 +45,8 @@ lvim.lsp.buffer_mappings.normal_mode["gf"] = {
 vim.api.nvim_set_keymap('n', '<S-f>', ':Telescope live_grep<CR>', { noremap = true, silent = true })
 
 -- Mapeamento para <leader>tt abrir o terminal usando ToggleTerm
-lvim.keys.normal_mode["<leader>tt"] = "<cmd>ToggleTerm<CR>"
-lvim.keys.term_mode["<leader>tt"] = "<cmd>ToggleTerm<CR>"
+lvim.keys.normal_mode["<leader>'"] = "<cmd>ToggleTerm<CR>"
+lvim.keys.term_mode["<leader>'"] = "<cmd>ToggleTerm<CR>"
 
 -- Comandos para copiar conteudo do lunarvim para area de transferencia do sistema
 lvim.keys.normal_mode["<leader>y"] = '"+y'
