@@ -1,5 +1,15 @@
 lvim.plugins = {
   {
+    "jinh0/eyeliner.nvim",
+    config = function()
+      require('eyeliner').setup {
+        highlight_on_key = true, -- Highlights only after a motion key is pressed
+        dim = false,             -- Keeps unhighlighted characters at full opacity
+        match = '[0-9a-zA-Z]',
+      }
+    end
+  },
+  {
     'welli7ngton/code7runner',
     config = function()
       require('code7runner')
