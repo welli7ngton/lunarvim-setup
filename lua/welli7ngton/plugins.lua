@@ -25,7 +25,7 @@ lvim.plugins = {
     "lukas-reineke/virt-column.nvim",
     opts = {
       char = { "┆" },
-      virtcolumn = "80",
+      virtcolumn = "115",
       highlight = { "NonText" },
     }
   },
