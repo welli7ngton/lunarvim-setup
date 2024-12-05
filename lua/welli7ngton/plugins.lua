@@ -37,8 +37,7 @@ lvim.plugins = {
     build = "make install_jsregexp",
     dependencies = { "rafamadriz/friendly-snippets" },
   },
-  { "NLKNguyen/papercolor-theme" }, -- sunset theme
-  { "LunarVim/synthwave84.nvim" },  --sunset theme
+  { "LunarVim/synthwave84.nvim" }, --sunset theme
   {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
@@ -51,15 +50,7 @@ lvim.plugins = {
       })
     end,
   },
-  {
-    "iamcco/markdown-preview.nvim",
-    ft = "markdown",
-    build = ":call mkdp#util#install()",
-    config = function()
-      vim.g.mkdp_auto_start = 1
-    end,
-  }, { "jose-elias-alvarez/typescript.nvim" },
-  { 'wakatime/vim-wakatime',             lazy = false },
+  { 'wakatime/vim-wakatime',        lazy = false },
   { 'mg979/vim-visual-multi' },
   { "Mofiqul/dracula.nvim" },
   { 'editorconfig/editorconfig-vim' },
@@ -113,23 +104,11 @@ lvim.plugins = {
       require("nvim-ts-autotag").setup()
     end,
   },
-  { "tpope/vim-repeat" },
-
   { "ThePrimeagen/harpoon" },
-
-  {
-    'phaazon/hop.nvim',
-    branch = 'v2',
-    config = function()
-      require('hop').setup()
-    end
-  },
-
   {
     'nvim-telescope/telescope-frecency.nvim',
     dependencies = { 'nvim-telescope/telescope.nvim', 'kkharji/sqlite.lua' },
   },
-
   {
     'AckslD/nvim-trevJ.lua',
     config = 'require("trevj").setup()',

@@ -18,13 +18,6 @@ lvim.keys.normal_mode["<c-u>"] = "<c-u>zz"
 -- seleciona o arquivo todo ctrl-a
 lvim.keys.normal_mode["<c-a>"] = "ggVG"
 
--- Cria uma aba nova referenciando o arquivo atual
--- gt vai para proxima aba
--- gT vai para aba anterior
--- (123456789)gt escolhe a aba de acordo com o numero digitado
-vim.keymap.set('n', 'gn', ":tabe %<cr>")
-vim.keymap.set('n', 'gN', ":tabclose<cr>")
-
 lvim.lsp.buffer_mappings.normal_mode["gr"] = {
   ":lua require'telescope.builtin'.lsp_references()<cr>",
   kind.cmp_kind.Reference .. " find references"
