@@ -28,7 +28,7 @@ lspconfig.robotframework_ls.setup({
     -- Habilitar recursos específicos como formatação ou linting
   end,
   cmd = { "robotframework_ls" },
-  filetypes = { "robot" },
+  filetypes = { "robot", "resource" },
   settings = {
     robot = {
       python = {
