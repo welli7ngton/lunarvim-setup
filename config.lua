@@ -8,8 +8,6 @@ require("welli7ngton.dashboard")   -- Configuração de dashboard e banners
 require("welli7ngton.which-key")
 require("welli7ngton.keymaps")
 require("welli7ngton.general_lsp")
-require("welli7ngton.java-lsp")
-require("welli7ngton.robotframework-lsp")
 require("welli7ngton.statusline")
 -- Configurações gerais do LunarVim
 lvim.log.level = "warn"
