@@ -14,8 +14,11 @@ lvim.log.level = "warn"
 vim.opt.timeoutlen = 500
 lvim.format_on_save = true
 -- lvim.transparent_window = false
+lvim.lsp.installer.setup.automatic_installation = true
 
 -- For more snippets
+
+
 -- And this site to make snippets: https://snippet-generator.app
 -- https://github.com/Hydraallen/lvim/blob/main/snippets/java.json
 
