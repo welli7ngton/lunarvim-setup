@@ -1,5 +1,5 @@
 lvim.builtin.lualine.options = {
-  theme = "horizon",
+  theme = "rose-pine",
   icons_enabled = true,
 }
 
