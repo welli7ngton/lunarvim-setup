@@ -14,11 +14,11 @@ wk.mappings["l"]["R"] = { ":LspRestart<cr>", kind.icons.exit .. " Restart" }
 
 wk.mappings["s"]["w"] = {
   "<cmd>lua require('telescope.builtin').grep_string({ search = vim.fn.expand('<cword>') })<cr>",
-  ' ' .. kind.cmp_kind.EnumMember .. " Search Word Under Cursor"
+  kind.cmp_kind.EnumMember .. " Search Word Under Cursor"
 }
 
 wk.mappings["m"] = {
-  name = ' ' .. kind.todo_comments.PERF .. " Harpoon",
+  name = kind.todo_comments.PERF .. " Harpoon",
   m = { ":lua require('harpoon.mark').add_file()<cr>", "Mark file" },
   t = { ":lua require('harpoon.ui').toggle_quick_menu()<cr>", "Toggle UI" },
   a = { ":lua require('harpoon.ui').nav_file(1)<cr>", "Goto mark 1" },
@@ -35,7 +35,7 @@ wk.mappings["m"] = {
 }
 
 wk.mappings["W"] = {
-  name = ' ' .. kind.icons.screen .. " Window Ctrl",
+  name = kind.icons.screen .. " Window Ctrl",
   h = { '<C-w>|', 'Maximize window horizontally (|)' },
   v = { '<C-w>_', 'Maximize window vertically (_)' },
   ['='] = { '<C-w>=', 'Resize windows equally' },
@@ -43,7 +43,7 @@ wk.mappings["W"] = {
 }
 
 wk.mappings["G"] = {
-  name = ' ' .. kind.icons.hint .. " Github Copilot",
+  name = kind.icons.hint .. " Github Copilot",
   a = { ":lua require('copilot.suggestion').accept()<cr>", "Accept" },
   n = { ":lua require('copilot.suggestion').next()<cr>", "Next" },
   N = { ":lua require('copilot.suggestion').prev()<cr>", "Prev" },
