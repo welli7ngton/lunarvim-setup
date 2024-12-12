@@ -1,16 +1,12 @@
 lvim.plugins = {
-  {
-    "AckslD/swenv.nvim"
-  },
-  {
-    "stevearc/dressing.nvim"
-  },
+  { "AckslD/swenv.nvim" },
+  { "stevearc/dressing.nvim" },
   {
     "jinh0/eyeliner.nvim",
     config = function()
       require('eyeliner').setup {
         highlight_on_key = true, -- Highlights only after a motion key is pressed
-        dim = false,           -- Keeps unhighlighted characters at full opacity
+        dim = false,             -- Keeps unhighlighted characters at full opacity
         match = '[0-9a-zA-Z]',
       }
     end
@@ -61,7 +57,6 @@ lvim.plugins = {
   { "Mofiqul/dracula.nvim" },
   { 'editorconfig/editorconfig-vim' },
   { 'lunarvim/lunar.nvim' },
-  { "morhetz/gruvbox" },
 
   { 'f-person/git-blame.nvim' },
   {
@@ -69,14 +64,13 @@ lvim.plugins = {
     config = function()
       require('nvim-highlight-colors').setup()
     end
-  },
+  }, -----------------------Themes-----------------------
   { "sainnhe/gruvbox-material" },
   { "sainnhe/sonokai" },
   { "sainnhe/edge" },
   { "lunarvim/horizon.nvim" },
-  { "tomasr/molokai" },
   { "ayu-theme/ayu-vim" },
-
+  { "rose-pine/neovim",        name = "rose-pine" },
   {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
