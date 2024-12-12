@@ -5,8 +5,8 @@ lvim.leader = "space"
 vim.opt.relativenumber = true
 
 -- alterna entre buffers
-lvim.keys.normal_mode["<s-l>"] = ":BufferLineCycleNext<cr>"
-lvim.keys.normal_mode["<s-h>"] = ":BufferLineCyclePrev<cr>"
+-- lvim.keys.normal_mode["<s-l>"] = ":BufferLineCycleNext<cr>"
+-- lvim.keys.normal_mode["<s-h>"] = ":BufferLineCyclePrev<cr>"
 
 -- fecha o buffer atual
 lvim.keys.normal_mode["<s-x>"] = ":BufferKill<cr>"
