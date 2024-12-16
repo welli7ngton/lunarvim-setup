@@ -58,3 +58,5 @@ wk.mappings["t"] = {
   p = { ':Telescope projects<cr>', 'Projects' }, -- requires telescope-project.nvim plugin
   r = { ':Telescope resume<cr>', 'Resume' },
 }
+
+wk.mappings["f"] = {"<cmd>Telescope find_files<CR>", "Find files"}
