@@ -9,14 +9,13 @@ require("welli7ngton.which-key")
 require("welli7ngton.keymaps")
 require("welli7ngton.general_lsp")
 require("welli7ngton.statusline")
+
 -- Configurações gerais do LunarVim
 lvim.log.level = "warn"
 vim.opt.timeoutlen = 500
 lvim.format_on_save = true
--- lvim.transparent_window = false
 lvim.lsp.installer.setup.automatic_installation = true
 
--- For more snippets
 
 
 -- And this site to make snippets: https://snippet-generator.app
