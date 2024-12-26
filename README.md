@@ -6,31 +6,43 @@ This repository contains my custom configurations for [LunarVim](https://www.lun
 This setup includes several customized settings, plugins, keymaps, and options that enhance the development experience, particularly for languages like Lua, Python, Java and frameworks like Robot Framework.
 
 ## Configs structure
-`/lua/welli7ngton`
+```bash
+~/.configs/lvim/
+```
 
-├── autcmds.lua                # Custom auto commands
+├── config.lua                    # entrypoint for lunarvim configs
 
-├── banners.lua                # Banner settings for the dashboard
+├── lua
 
-├── colorscheme.lua            # Custom color scheme settings
+│   └── welli7ngton
 
-├── dashboard.lua              # Dashboard configuration
+│       ├── autocmds.lua          # Custom auto commands
 
-├── filetype.lua               # File type specific configurations
+│       ├── banners.lua           # Banner settings for the dashboard
 
-├── keymaps.lua                # Custom key mappings
+│       ├── colorscheme.lua       # Custom color scheme settings
 
-├── kind.lua                   # Code completion and snippets
+│       ├── dashboard.lua         # Dashboard configuration
 
-├── options.lua                # Editor options and settings
+│       ├── filetype.lua          # File type specific configurations
 
-├── plugins.lua                # Plugin management and installation
+│       ├── general_lsp.lua       # general lsp configs
 
-├── robotframework-lsp.lua      # Configuration for Robot Framework LSP
+│       ├── keymaps.lua           # Custom key mappings
 
-├── statusline.lua             # Custom statusline settings
+│       ├── kind.lua              # Code completion and snippets
 
-├── which-key.lua              # Configurations for which-key plugin
+│       ├── options.lua           # Editor options and settings
+
+│       ├── plugins.lua           # Plugin management and installation
+
+│       ├── rose-pine-setup.lua   # rose pine theme configs
+
+│       ├── statusline.lua        # Custom statusline settings
+
+│       └── which-key.lua         # Configurations for which-key plugin
+
+└── snippets                      # snippets      
 
 ## installation
 ### To use this configuration with your LunarVim setup, follow these steps:
