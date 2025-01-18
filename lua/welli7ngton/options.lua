@@ -1,17 +1,5 @@
-if vim.g.neovide then
-  vim.opt.guifont = "MesloLGM Nerd Font Mono:h24"
-
-  vim.g.neovide_transparency = 1
-  vim.g.transparency = 0.8
-  vim.g.neovide_scroll_animation_length = 0.3
-  vim.g.neovide_refresh_rate = 60
-  vim.g.neovide_confirm_quit = true
-  vim.g.neovide_input_macos_alt_is_meta = false
-end
-
 lvim.log.level = "warn"
 lvim.format_on_save = true
-
 
 vim.opt.clipboard = "unnamedplus"
 
@@ -25,20 +13,24 @@ lvim.builtin.treesitter.ensure_installed = {
   "bash",
   "c",
   "javascript",
+  "typescript",
   "json",
   "lua",
   "python",
-  "typescript",
   "tsx",
   "css",
   "rust",
   "java",
   "yaml",
+  "html",
+  "css",
 }
 
-local TERM_DIRECTION = "horizontal"              -- Use 'float' for a floating term or 'horizontal' for VsCode Like
+lvim.builtin.treesitter.highlight = { enable = true }
+
+local TERM_DIRECTION = "float" -- Use 'float' for a floating term or 'horizontal' VsCode Like
 lvim.builtin.terminal.active = true
-lvim.builtin.terminal.direction = TERM_DIRECTION --
+lvim.builtin.terminal.direction = TERM_DIRECTION
 
 if TERM_DIRECTION == "horizontal" then
   lvim.builtin.terminal.size = 13

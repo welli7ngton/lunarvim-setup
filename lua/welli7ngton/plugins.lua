@@ -54,7 +54,6 @@ lvim.plugins = {
   },
   { 'wakatime/vim-wakatime',        lazy = false },
   { 'mg979/vim-visual-multi' },
-  { "Mofiqul/dracula.nvim" },
   { 'editorconfig/editorconfig-vim' },
   { 'lunarvim/lunar.nvim' },
 
@@ -71,6 +70,8 @@ lvim.plugins = {
   { "lunarvim/horizon.nvim" },
   { "ayu-theme/ayu-vim" },
   { "rose-pine/neovim",        name = "rose-pine" },
+  { "Mofiqul/dracula.nvim" },
+  --------------------------Themes-----------------------
   {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
@@ -119,16 +120,6 @@ lvim.plugins = {
     end,
   }
 }
-
-table.insert(lvim.plugins, {
-  "zbirenbaum/copilot-cmp",
-  event = "InsertEnter",
-  dependencies = { "zbirenbaum/copilot.lua" },
-  config = function()
-    local ok, cmp = pcall(require, "copilot_cmp")
-    if ok then cmp.setup({}) end
-  end,
-})
 
 lvim.builtin.telescope.on_config_done = function(telescope)
   pcall(telescope.load_extension, "frecency")
